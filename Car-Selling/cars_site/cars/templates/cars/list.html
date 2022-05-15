@@ -1,1 +1,9 @@
-{% extends 'base.html' %} {% block body %} {% endblock %}
+{% extends 'base.html' %} {% block body %}
+<div class="container">
+  <ul>
+    {% for car in all_cars%}
+    <li>{{ car }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

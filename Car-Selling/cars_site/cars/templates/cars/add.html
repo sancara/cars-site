@@ -1,1 +1,16 @@
-{% extends 'base.html' %} {% block body %} {% endblock %}
+{% extends 'base.html' %} {% block body %}
+<div class="container">
+  <form action="" method="post">
+    {% csrf_token %}
+    <div>
+      <label for="brand">Marca:</label>
+      <input id="brand" name="brand" type="text" />
+    </div>
+    <div>
+      <label for="year">Modelo:</label>
+      <input id="year" name="year" type="text" />
+    </div>
+    <input type="submit" />
+  </form>
+</div>
+{% endblock %}
