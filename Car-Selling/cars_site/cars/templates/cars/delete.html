@@ -1,1 +1,12 @@
-{% extends 'base.html' %} {% block body %} {% endblock %}
+{% extends 'base.html' %} {% block body %}
+<div class="container">
+  <form action="" method="post">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="deletion">Delete</label>
+      <input class="form-control" type="text" name="deletion" id="deletion" />
+    </div>
+    <input type="submit" class="btn btn-outline-danger" />
+  </form>
+</div>
+{% endblock %}

@@ -2,15 +2,15 @@
 <div class="container">
   <form action="" method="post">
     {% csrf_token %}
-    <div>
+    <div class="form-group">
       <label for="brand">Marca:</label>
-      <input id="brand" name="brand" type="text" />
+      <input class="form-control" id="brand" name="brand" type="text" />
     </div>
-    <div>
+    <div class="form-group">
       <label for="year">Modelo:</label>
-      <input id="year" name="year" type="text" />
+      <input class="form-control" id="year" name="year" type="text" />
     </div>
-    <input type="submit" />
+    <input class="btn btn-outline-success" type="submit" />
   </form>
 </div>
 {% endblock %}

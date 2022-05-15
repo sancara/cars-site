@@ -1,9 +1,12 @@
 {% extends 'base.html' %} {% block body %}
 <div class="container">
-  <ul>
+  <table class="table table-striped">
     {% for car in all_cars%}
-    <li>{{ car }}</li>
+    <tr>
+      <td>{{ car.brand }}</td>
+      <td>{{ car.year }}</td>
+    </tr>
     {% endfor %}
-  </ul>
+  </table>
 </div>
 {% endblock %}
